@@ -45,7 +45,7 @@ let myResume={
   ],
   "languages": [
     {
-      "language": "Enlish","Tamil"
+      "language": "Tamil","English"
     }
   ],
 }
