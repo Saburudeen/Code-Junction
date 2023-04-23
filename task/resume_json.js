@@ -1,4 +1,4 @@
-let myResume={
+let myResume= {
   "basics": {
     "name": "Saburudeen s",
     "email": "saburu145@gmail.com",
