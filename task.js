@@ -17,4 +17,11 @@ xhr.onload = function () {
   for(var i = 0; i < responseObj.length; i++) {
     console.log(responseObj[i].flag)
   }
-} 
+}
+{
+  const asianCountries = data.filter(
+    (country) => country.region === "Asia"
+  );
+  console.log("Asian countries:", asianCountries);
+
+}
