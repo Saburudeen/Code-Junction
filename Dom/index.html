@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1>The Document Object Model</h1>
+    <h2>The createElement() Method</h2>
+
+    <p id="demo"></p>
+
+    <p id="para1" class="test1">Create a p1 element with some text:</p>
+
+    <script>
+      document.getElementById("demo").innerHTML
+        "Browser inner window width: " +
+        window.innerWidth +
+        "px<br>" +
+        "Browser inner window height: " +
+        window.innerHeight +
+        "px<br>" +
+        "Screen width: " +
+        screen.width +
+        "px<br>" +
+        "Screen height: " +
+        screen.height +
+        "px<br>" +
+        "Screen available width: " +
+        screen.availWidth +
+        "px<br>" +
+        "Screen available height: " +
+        screen.availHeight +
+        "px<br>" +
+        "Screen Color Depth: " +
+        screen.colorDepth +
+        "px<br>" +
+        "Screen Pixel Depth: " +
+        screen.pixelDepth +
+        "px<br>";
+      const para1 = document.getElementById("para1");
+      para1.style.color = "red";
+
+    //document.querySelector(".test4").style.backgroundColor = "yellow";
+
+      const nodeList = document.querySelectorAll("p");
+
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "grey";
+      }
+
+      //create element
+      const para = document.createElement("p");
+      para.innerText = "This is a paragraph.";
+      para.setAttribute("id", "para2");
+      para.innerHTML = "<span>Hey John!!!</span>";
+
+      // Append to body
+      document.body.appendChild(para);
+
+      const head = document.createElement("h1");
+      head.innerText = "Welcome All@@@@@@@@";
+      head.setAttribute("id", "head1");
+
+      document.body.appendChild(head);
+
+      const div = document.createElement("div");
+      div.innerText = "GUVIB46 Weekday!!!!";
+      div.innerHTML = "<div>This is innerHTML</div>";
+      div.setAttribute("id", "div1");
+
+      document.body.appendChild(div);
+
+      const parent = document.createElement("div");
+      parent.setAttribute("id", "parent");
+      parent.innerHTML = "<p></p>";
+      const child = document.createElement("p");
+      const parentDiv = document.getElementById("parent");
+      document.parentDiv.appendChild(child);
+      parent.appendChild("Welcome everyone!!!");
+      document.body.appendChild(parent);
+    </script>
+  </body>
+</html>
