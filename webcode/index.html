@@ -1,20 +1,29 @@
-<form>
-    <label for="search">Search:</label>
-    <input type="text" id="search" name="search">
-    <button type="submit">Search</button>
-  </form>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Address</th>
-        <th>Website</th>
-        <th>Phone</th>
-      </tr>
-    </thead>
-    <tbody id="results">
-    </tbody>
-  </table>
-  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brewery API</title>
+</head>
+<body style="background-color: rgb(246, 246, 246);">
+	<h1>Free and open-source brewery data</h1>
+	<input type="text" id="search" placeholder="Search...">
+	<div id="results"></div>
+	<script src="script.js"></script>
+
+<style>
+		h1 {
+			text-align: center;
+			padding: 23px;
+			background-color: rgb(255, 174, 0);
+			color: rgb(0, 0, 0);
+		}
+		input {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			padding: 15px;
+			background-color: rgb(255, 219, 102);
+			color: rgb(255, 255, 255);
+		}
+	</style>
+</body>
+</html>
